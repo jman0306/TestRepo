@@ -1,0 +1,145 @@
+/* ================= Estilos generales por etiqueta (permitidos) ================= */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: #333;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h3, h4 {
+    color: #2c3e50;
+}
+
+/* ================= Estilos por clases ================= */
+.header {
+    background-color: #dfe6e9;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-list a {
+    text-decoration: underline;
+    color: #0984e3;
+}
+
+.nav-list a:hover {
+    color: #d63031;
+}
+
+.section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #636e72;
+}
+
+.article {
+    border: 2px dotted #b2bec3;
+    padding: 15px;
+}
+
+.resaltado {
+    color: #6c5ce7;
+}
+
+.galeria {
+    display: flex;
+    gap: 10px;
+}
+
+.imagen {
+    max-height: 200px;   /* Tamaño máximo */
+    max-width: 100%;     /* Se adapta al ancho */
+    height: auto;        /* Escala proporcionalmente */
+    width: auto;
+    object-fit: contain; /* No recorta la imagen */
+    border: 3px solid #2d3436;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+}
+
+.galeria {
+    display: flex;            /* En fila */
+    gap: 10px;                /* Separación entre objetos */
+    flex-wrap: wrap;          /* Si ya no caben a lo ancho se bajan */
+    justify-content: center;  /* Se centran */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    border: 2px solid #0984e3;
+    background-color: #74b9ff;
+    padding: 8px;
+    border-radius: 8px; /* botón ligeramente circular */
+}
+
+.btn:hover {
+    background-color: #0984e3;
+    color: white;
+}
+
+.footer {
+    background-color: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* ================= ÚNICO uso de ID para estilado ================= */
+#contacto {
+    border: 4px solid #e84393;
+}
+
+/* ================= Media Queries ================= */
+
+/* Cuando el ancho sea menor a 700px */
+@media (max-width: 700px) {
+    .main {
+        background-color: #ffeaa7;
+    }
+}
+
+/* Cuando el ancho sea menor a 300px */
+@media (max-width: 300px) {
+    .main {
+        background-color: #fab1a0;
+    }
+}
+
+/* Ocultar imagen cuando el ancho sea menor a 400px */
+@media (max-width: 400px) {
+    .desaparecer {
+        display: none;
+    }
+}
