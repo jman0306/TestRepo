@@ -1,0 +1,52 @@
+COMANDOS DE MEMORIA
+git checkout (nombre de la rama)               ----- Todos los cambios se hacen en la rama seleccionada
+git fetch origin                               ----- Descarga info más reciente 
+git merge origin/main                          ----- Todos los cambios en main a mi rama
+git add .  (cambia punto por un solo archivo)  ----- Agrega lo nuevo para subirlo
+git commit -m "(mensaje)"                      ----- Comentario para el cambio 
+git push -u origin (nombre de la rama)         ----- Sube los cambios al repo remoto 
+
+COMANDOS CONFIGURACIÓN
+git switch -c (nombre de la rama)              ----- Crea y cambia a la rama
+git switch (nombre de la rama)                 ----- Solo haces el cambio
+git branch                                     ----- Ves en que rama estas
+git clone (dirección URL)                      ----- Clonas un repo remoto
+git diff --name-only --diff-filter=U           ----- Nombre del archivo en conflicto
+
+EXTRAS
+echo "(texto)" > (Nombre del archivo)                     ----- Para crear un archivo desde terminal									
+MANUAL
+1. git --version
+2. winget install --id Git.Git -e --source winget
+2.1. Crear el repositorio en GitHub del navegador
+2.2. Copiar el link https
+
+3. git clone (link https)
+3.1. cd (nombre del repo)
+4. Editar el README localmente
+5. git add .git
+6. git commit -m "Edita README"
+7. git push
+
+8. git switch -c intereses-personales
+9. archivo about-me.txt
+10. git add .
+11. git commit -m "Agrega rama intereses-personales"
+12. git push -u origin intereses-personales
+
+12.1.git switch main
+
+13. git switch -c intereses-profesionales
+14. archivo about-me.txt
+15. git add .
+16. git commit -m "Agrega rama intereses-profesionales"
+17. git push -u origin intereses-profesionales
+
+18. git switch main
+19. git merge intereses-profesionales
+20. Corregir error (cambia text dentro del archivo)
+21. git add .
+22. git commit -m "Resolviendo"
+23. git merge personal-interests
+24. git diff --name-only --diff-filter=U 
+25. git log --oneline --graph
