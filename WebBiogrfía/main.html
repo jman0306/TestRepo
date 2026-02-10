@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Indica que el documento usa HTML5 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite que la página sea responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vida y obra de Marie Curie</title>
+
+    <!-- Importación del archivo CSS local -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <h1>Marie Curie</h1>
+        <h2>Pionera de la ciencia moderna</h2>
+
+        <!-- Barra de navegación -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <!-- Enlaces internos usando ids -->
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#obra">Obra</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+                <!-- Enlaces externos que abren en nueva pestaña -->
+                <li><a href="https://historia.nationalgeographic.com.es/a/marie-curie-madre-fisica-moderna_14453" target="_blank">National Geographic</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+        <!-- ===== Sección Biografía ===== -->
+        <section id="biografia" class="section">
+            <h3>Biografía</h3>
+
+            <article class="article">
+                <p>
+                    <span class="resaltado">Marie Curie</span> fue una científica polaca-francesa,
+                    reconocida por sus investigaciones sobre la radiactividad.
+                </p>
+                <hr>
+                <p>
+                    Fue la primera persona en ganar <strong>dos Premios Nobel</strong>
+                    en distintas disciplinas.
+                </p>
+            </article>
+        </section>
+
+        <!-- ===== Sección Obra ===== -->
+        <section id="obra" class="section">
+            <h3>Obra científica</h3>
+
+            <div class="contenedor-obras">
+                <h4>Principales logros</h4>
+                <!-- Lista ordenada -->
+                <ol>
+                    <li>Descubrimiento del polonio</li>
+                    <li>Descubrimiento del radio</li>
+                    <li>Investigaciones sobre radiación</li>
+                </ol>
+
+                <!-- Lista no ordenada -->
+                <ul>
+                    <li>Premio Nobel de Física</li>
+                    <li>Premio Nobel de Química</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== Sección Galería ===== -->
+        <section id="galeria" class="section">
+            <h3>Galería</h3>
+
+            <div class="galeria">
+                <!-- Al menos tres imágenes -->
+                <img src="Retrato.png" alt="Marie Curie retrato" class="imagen">
+                <img src="laboratorio.jpg" alt="Marie Curie laboratorio" class="imagen">
+                <img src="Nobel.jpg" alt="Premio Nobel" class="imagen desaparecer">
+            </div>
+        </section>
+
+        <!-- ===== Sección Contacto ===== -->
+        <section id="contacto" class="section especial">
+            <!-- ESTA sección usará el ÚNICO id estilado en CSS -->
+            <h3>Contacto</h3>
+
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo">
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p class="footer-text">&copy; 2026 Página educativa</p>
+    </footer>
+
+</body>
+</html>
